@@ -74,7 +74,7 @@ export const ButtonsWrapper = styled.div`
       background: transparent;
       color: ${theme.colors.gray};
 
-      font-size: ${theme.font.sizes.small};
+      font-size: ${theme.font.sizes.medium};
       font-weight: bold;
 
       cursor: pointer;

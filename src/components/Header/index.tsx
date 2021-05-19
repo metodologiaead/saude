@@ -18,7 +18,7 @@ const Header = () => {
           </p>
           <S.ButtonsWrapper>
             <Button href="#form" name="Matricule-se Já!" />
-            <Button href="https://api.whatsapp.com/send?phone=5582999762839&text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20cursos" name="WhatsApp" />
+            <Button href="https://api.whatsapp.com/send?phone=5582988686985&text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20cursos" name="WhatsApp" />
           </S.ButtonsWrapper>
         </S.HeadingWrapper>
 
