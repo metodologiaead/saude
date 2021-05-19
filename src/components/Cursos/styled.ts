@@ -52,6 +52,9 @@ export const ButtonsWrapper = styled.div`
 
     width: 100%;
 
+    margin-top: 20px;
+
+
     ul {
       display: flex;
       justify-content: space-around;
