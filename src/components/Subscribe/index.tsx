@@ -65,7 +65,7 @@ const Subscribe = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} id="form">
+    <form onSubmit={handleSubmit}>
       <ToastContainer />
       <S.InputBox>
         <input
