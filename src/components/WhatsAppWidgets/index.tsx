@@ -13,7 +13,7 @@ const WhatsAppWidgets = () => {
   return (
     <Container>
       <WhatsAppWidget
-        phoneNumber="+5582988032093"
+        phoneNumber="+5582988686985"
         textReplyTime="Atendimento das 08h às 18h"
         message="Em que posso Ajudar?"
         companyName="Metodologia EAD"
