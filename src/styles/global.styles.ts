@@ -35,10 +35,16 @@ const GlobalStyle = createGlobalStyle`
       font-weight: ${theme.font.bold};
       color: ${theme.colors.texts};
     }
-    h3, h4 {
+    h3,
+    h4 {
       font-size: ${theme.font.sizes.small};
       font-weight: ${theme.font.bold};
       color: ${theme.colors.texts};
+    }
+
+    ol,
+    ul {
+      list-style: none;
     }
   `}
 `

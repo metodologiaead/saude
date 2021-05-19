@@ -24,7 +24,7 @@ export default {
     texts: '#0C0C0C',
     white: '#ffffff',
     black: '#0C0C0C',
-    gray: '#D9E0E6'
+    gray: '#a9aeb3'
   },
   spacings: {
     xxsmall: '0.8rem',
