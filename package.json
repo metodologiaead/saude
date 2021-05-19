@@ -1,7 +1,7 @@
 {
-  "name": "nexjs-bellmont-sistema-boilerplate-styled-components-sem-themanexjs-bellmont-sistema-boilerplate-styled-components-com-thema",
+  "name": "saude",
   "version": "1.0.0",
-  "description": "Boilerplate 03",
+  "description": "Lending Page Saúded",
   "scripts": {
     "test": "jest --passWithNoTests",
     "lint": "eslint src",

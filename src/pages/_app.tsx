@@ -11,22 +11,25 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <meta name="theme-color" content="#252a36" />
+        <meta name="theme-color" content="#417B48" />
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
       </Head>
       <NextSeo
-        title="Boilerplate 03"
-        description="Boilerplate com styled-components e thema"
-        canonical="https://site.com.br/"
+        title="Venha evoluir na área da saúde,valores imperdíveis"
+        description="Faça sua Pós-Graduação totalmente ONLINE. Conclusão de 4 há 6 meses, TCC opcional."
+        canonical="https://saude.metodologiaead.com.br"
         openGraph={{
-          url: 'https://site.com.br/',
-          title:
-            'Boilerplate com styled-components e thema',
-          description:
-            'Boilerplate com styled-components e thema',
-          images: [{ url: 'https://res.cloudinary.com/bellmont-sistema/image/upload/v1612594246/thumbnail_undraw_content_team_b41f963811.png' }],
-          site_name: 'Boilerplate 03',
+          url: 'https://saude.metodologiaead.com.br',
+          title: 'Venha evoluir na área da saúde,valores imperdíveis',
+          description: 'Faça sua Pós-Graduação totalmente ONLINE. Conclusão de 4 há 6 meses, TCC opcional.',
+          images: [
+            {
+              url:
+                '/img/cover.png'
+            }
+          ],
+          site_name: 'Venha evoluir na área da saúde,valores imperdíveis',
           locale: 'pt_BR'
         }}
         twitter={{
