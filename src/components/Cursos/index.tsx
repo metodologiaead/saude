@@ -12,10 +12,6 @@ const Cursos = () => {
 
   const [show, setShow] = React.useState(1)
 
-  React.useEffect(() => {
-    show
-  }, [show])
-
   return (
     <S.Container>
       <S.Content>
