@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components'
 
 import theme from 'styles/theme'
 import GlobalStyle from 'styles/global.styles'
+import WhatsAppWidgets from 'components/WhatsAppWidgets'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -22,11 +23,11 @@ const App = ({ Component, pageProps }: AppProps) => {
         openGraph={{
           url: 'https://saude.metodologiaead.com.br',
           title: 'Venha evoluir na área da saúde,valores imperdíveis',
-          description: 'Faça sua Pós-Graduação totalmente ONLINE. Conclusão de 4 há 6 meses, TCC opcional.',
+          description:
+            'Faça sua Pós-Graduação totalmente ONLINE. Conclusão de 4 há 6 meses, TCC opcional.',
           images: [
             {
-              url:
-                '/img/cover.png'
+              url: '/img/cover.png'
             }
           ],
           site_name: 'Venha evoluir na área da saúde,valores imperdíveis',
@@ -40,6 +41,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       />
       <GlobalStyle />
       <Component {...pageProps} />
+      <WhatsAppWidgets />
     </ThemeProvider>
   )
 }
