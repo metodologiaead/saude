@@ -1,3 +1,4 @@
+import CursosLisMobile from 'components/CursosLisMobile'
 import React from 'react'
 
 //Estilos
@@ -17,6 +18,7 @@ const CursosMobile = () => {
             TCC opcional.
           </p>
         </S.HeadingWrapper>
+        <CursosLisMobile />
       </S.Content>
     </S.Container>
   )
