@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const Container = styled.section`
   ${({ theme }) => css`
@@ -34,6 +35,10 @@ export const HeadingWrapper = styled.div`
       color: ${theme.colors.secondary};
       text-align: center;
       text-transform: uppercase;
+
+      ${media.lessThan('medium')`
+        font-size: ${theme.font.sizes.medium};
+      `}
     }
 
     p {
@@ -41,6 +46,11 @@ export const HeadingWrapper = styled.div`
       color: ${theme.colors.texts};
       text-align: center;
       max-width: 700px;
+
+      ${media.lessThan('medium')`
+        font-size: ${theme.font.sizes.xsmall};
+        width: 80%;
+      `}
     }
   `}
 `
@@ -53,6 +63,16 @@ export const ImagesWrapper = styled.div`
     justify-content: center;
 
     margin-top: 20px;
+
+    ${media.lessThan('medium')`
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+
+      justify-content: center;
+      align-items: center;
+    `}
   `}
 `
 export const Qualidade = styled.div`
@@ -63,6 +83,13 @@ export const Qualidade = styled.div`
 
     width: 340px;
     height: 340px;
+
+    ${media.lessThan('medium')`
+      width: 340px;
+      height: 240px;
+      justify-content: center;
+      align-items: center;
+    `}
 
     background: ${theme.colors.secondary};
 
@@ -75,6 +102,11 @@ export const Qualidade = styled.div`
       font-weight: bold;
 
       margin-top: 50px;
+
+      ${media.lessThan('medium')`
+      font-size: ${theme.font.sizes.small};
+      margin-top: initial;
+      `}
     }
 
     p {
@@ -85,6 +117,10 @@ export const Qualidade = styled.div`
       width: 80%;
 
       margin-top: 30px;
+
+      ${media.lessThan('medium')`
+      font-size: ${theme.font.sizes.xsmall};
+      `}
     }
   `}
 `
@@ -107,15 +143,16 @@ export const Conhecimento = styled.div`
     position: relative;
 
     &::before {
-      content: "";
+      content: '';
       display: block;
       width: 100%;
       height: 100%;
+      border-radius: 10px;
 
       position: absolute;
 
       background: rgba(0, 0, 0, 0.5);
-      
+
       z-index: 2;
     }
 
@@ -128,6 +165,11 @@ export const Conhecimento = styled.div`
       margin-top: 50px;
 
       z-index: 10;
+
+      ${media.lessThan('medium')`
+        font-size: ${theme.font.sizes.small};
+        margin-top: initial;
+      `}
     }
 
     p {
@@ -140,6 +182,17 @@ export const Conhecimento = styled.div`
       margin-top: 30px;
 
       z-index: 10;
+
+      ${media.lessThan('medium')`
+        font-size: ${theme.font.sizes.xsmall};
+      `}
     }
+
+    ${media.lessThan('medium')`
+      width: 340px;
+      height: 240px;
+      justify-content: center;
+      align-items: center;
+    `}
   `}
 `

@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const Container = styled.section`
   ${({ theme }) => css`
@@ -21,6 +22,14 @@ export const Content = styled.div`
     max-width: 1100px;
 
     margin: 0 auto;
+
+    ${media.lessThan('medium')`
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+    `}
   `}
 `
 export const FormWrapper = styled.div`
@@ -36,11 +45,22 @@ export const FormWrapper = styled.div`
         color: ${theme.colors.secondary};
         text-transform: uppercase;
         font-weight: bold;
+
+        ${media.lessThan('medium')`
+          font-size: ${theme.font.sizes.medium};
+          text-align: center;
+        `}
       }
 
       p {
         font-size: ${theme.font.sizes.small};
         color: ${theme.colors.secondary};
+
+        ${media.lessThan('medium')`
+          font-size: ${theme.font.sizes.xsmall};
+          text-align: center;
+          width: 100%;
+        `}
       }
   `}
 `

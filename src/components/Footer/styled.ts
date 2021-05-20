@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const Container = styled.section`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
-
 
     width: 100%;
     height: 90vh;
@@ -13,6 +13,9 @@ export const Container = styled.section`
 
     background: ${theme.colors.secondary};
 
+    ${media.lessThan('medium')`
+      height: auto;
+    `}
   `}
 `
 export const Content = styled.div`
@@ -26,6 +29,13 @@ export const Content = styled.div`
     max-width: 1100px;
 
     margin: 0 auto;
+
+    ${media.lessThan('medium')`
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    `}
   `}
 `
 
@@ -35,6 +45,10 @@ export const SobreWrapper = styled.div`
     flex-direction: column;
 
     width: 100%;
+
+    ${media.lessThan('medium')`
+      padding: 0 20px;
+    `}
 
     h2 {
       font-size: ${theme.font.sizes.medium};
@@ -89,6 +103,13 @@ export const ContatosWrapper = styled.div`
     text-align: end;
     align-items: flex-end;
 
+    ${media.lessThan('medium')`
+      width: 100%;
+      text-align: initial;
+      align-items: initial;
+      padding: 0 20px;
+    `}
+
     span {
       font-size: ${theme.font.sizes.xsmall};
       color: ${theme.colors.white};
@@ -111,10 +132,20 @@ export const ImagesWrapper = styled.div`
     width: 100%;
     margin-bottom: 10px;
 
+    ${media.lessThan('medium')`
+      justify-content: initial;
+      margin-top: 20px;
+    `}
+
     img {
       width: 40px;
       height: auto;
       margin-left: 20px;
+
+      ${media.lessThan('medium')`
+      margin-left: initial;
+      margin-right: 20px;
+      `}
     }
   `}
 `

@@ -3,13 +3,17 @@ import media from 'styled-media-query'
 
 export const Container = styled.section`
   ${({ theme }) => css`
-    display: flex;
+    display: none;
     flex-direction: column;
 
     width: 100%;
     height: auto;
 
     padding: 50px 0;
+
+    ${media.lessThan(`medium`)`
+      display: flex;
+    `}
   `}
 `
 export const Content = styled.div`
@@ -23,43 +27,33 @@ export const Content = styled.div`
     margin: 0 auto;
   `}
 `
-export const ItemWrapper = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    justify-content: space-around;
-
-    ${media.lessThan('medium')`
-     flex-direction: column;
-    `}
-  `}
-`
-
-export const Item = styled.div`
+export const HeadingWrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
-    ${media.lessThan('medium')`
-      margin: 20px;
-    `}
-
     h2 {
-      font-size: ${theme.font.sizes.xlarge};
-      font-weight: bold;
-      color: ${theme.colors.white};
-      margin: 10px 0;
+      font-size: ${theme.font.sizes.large};
+      color: ${theme.colors.secondary};
+      text-align: center;
+      text-transform: uppercase;
+
+      ${media.lessThan('medium')`
+      font-size: ${theme.font.sizes.medium};
+      `}
     }
-    
+
     p {
       font-size: ${theme.font.sizes.small};
-      color: ${theme.colors.white};
-    }
+      color: ${theme.colors.texts};
+      text-align: center;
+      max-width: 550px;
 
-    img {
-      width: 50px;
-      height: auto;
+      ${media.lessThan('medium')`
+      font-size: ${theme.font.sizes.xsmall};
+      width: 80%;
+      `}
     }
   `}
 `

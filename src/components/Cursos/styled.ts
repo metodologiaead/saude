@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const Container = styled.section`
   ${({ theme }) => css`
@@ -9,6 +10,10 @@ export const Container = styled.section`
     height: auto;
 
     padding: 50px 0;
+
+    ${media.lessThan('medium')`
+      display: none;
+    `}
   `}
 `
 export const Content = styled.div`
@@ -53,7 +58,6 @@ export const ButtonsWrapper = styled.div`
     width: 100%;
 
     margin-top: 20px;
-
 
     ul {
       display: flex;
@@ -131,7 +135,3 @@ export const ButtonsWrapper = styled.div`
     }
   `}
 `
-
-
-
-

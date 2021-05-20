@@ -27,7 +27,9 @@ const Qualidades = () => {
               confiança e respeito dos nossos alunos, que são parte fundamental
               da nossa história.
             </p>
-            <Button href="#form" name="Quero ser aluno!" />
+            <S.ButtonsWrapper>
+              <Button href="#form" name="Quero ser aluno!" />
+            </S.ButtonsWrapper>
             <img
               src="/img/mec.png"
               alt="Imagem de confirmnação de nota 5 no mec"
@@ -35,14 +37,16 @@ const Qualidades = () => {
           </S.HeadingsWrapper>
         </S.NotaWrapper>
 
-        <S.NotaWrapper>
+        <S.FacilidadeWrapper>
           <S.HeadingsWrapper>
             <h2>+ Facilidade para você estudar</h2>
             <p>
               A pandemia trouxe muitos desafios e transformou o mundo e a
               maneira como nos relacionamentos, trabalhamos e estudamos.
             </p>
-            <Button href="#form" name="Quero ser aluno!" />
+            <S.ButtonsWrapper>
+              <Button href="#form" name="Quero ser aluno!" />
+            </S.ButtonsWrapper>
           </S.HeadingsWrapper>
           <S.Imagewrapper>
             <Image
@@ -52,7 +56,7 @@ const Qualidades = () => {
               alt="Imagem estudantes sorrindo na mesa e a logo da ipemig"
             />
           </S.Imagewrapper>
-        </S.NotaWrapper>
+        </S.FacilidadeWrapper>
         <IconesQualidade />
       </S.Content>
     </S.Container>

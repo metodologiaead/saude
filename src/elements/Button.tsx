@@ -29,6 +29,10 @@ const LinkTo = styled.a`
       margin: 0 0 10px 0;
     `}
 
+    ${media.lessThan('medium')`
+      margin-right: initial;
+    `}
+
     &:hover {
       filter: brightness(0.9);
       box-shadow: 0 1px 1px 0 rgb(0 0 0 / 30%);
