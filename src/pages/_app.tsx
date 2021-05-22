@@ -1,14 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Router from 'next/router'
 import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 import { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
+import { GTMPageView } from '../utils/gtm'
 
 import theme from 'styles/theme'
 import GlobalStyle from 'styles/global.styles'
 import WhatsAppWidgets from 'components/WhatsAppWidgets'
 
 const App = ({ Component, pageProps }: AppProps) => {
+  // Initiate GTM
+  useEffect(() => {
+    const handleRouteChange = (url: string) => GTMPageView(url)
+    Router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      Router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [])
+
   return (
     <ThemeProvider theme={theme}>
       <Head>
