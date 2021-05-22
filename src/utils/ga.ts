@@ -7,7 +7,7 @@ declare global {
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url: string): void => {
-  window.gtag('config', process.env.NEXT_PUBLIC_GA_TRACKING, {
+  window.gtag('config', 'G-DZX2G9X3HM', {
     page_path: url
   })
 }
