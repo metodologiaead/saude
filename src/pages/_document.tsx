@@ -46,6 +46,7 @@ export default class NextDocument extends Document {
             as="font"
             crossOrigin=""
           />
+          <Analytics />
         </Head>
         <body>
           <Main />
