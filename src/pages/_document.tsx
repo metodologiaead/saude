@@ -8,6 +8,9 @@ import Document, {
 } from 'next/document'
 import Analytics from 'components/Analytics'
 import { ServerStyleSheet } from 'styled-components'
+import { hotjar } from 'react-hotjar';
+hotjar.initialize(2415059, 6);
+
 
 export default class NextDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -46,9 +49,12 @@ export default class NextDocument extends Document {
             as="font"
             crossOrigin=""
           />
+
+
           <Analytics />
         </Head>
         <body>
+          
           <Main />
           <NextScript />
           <Analytics />
