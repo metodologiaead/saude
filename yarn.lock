@@ -6336,11 +6336,6 @@ react-dom@^17.0.1:
     object-assign "^4.1.1"
     scheduler "^0.20.1"
 
-react-hotjar@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/react-hotjar/-/react-hotjar-2.2.1.tgz#5f06d15a146960262dba612657c828c8b58da8a3"
-  integrity sha512-rkHdsFDfI7HCKeAwkHPf8Vq7ZbpX0oE4/5GgVvNambWw8z0PSKKxi59qWYX7H+dDYjchiL3z3hrAFQ+PohgQOA==
-
 react-icons@^3.11.0:
   version "3.11.0"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.11.0.tgz#2ca2903dfab8268ca18ebd8cc2e879921ec3b254"
@@ -6401,6 +6396,11 @@ react-toastify@^7.0.4:
   integrity sha512-Rol7+Cn39hZp5hQ/k6CbMNE2CKYV9E5OQdC/hBLtIQU2xz7DdAm7xil4NITQTHR6zEbE5RVFbpgSwTD7xRGLeQ==
   dependencies:
     clsx "^1.1.1"
+
+react-use-hotjar@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-use-hotjar/-/react-use-hotjar-1.1.2.tgz#0647f70fbb6dbb0aae2db9fe7719be087f78ed0d"
+  integrity sha512-e8tAworXX3DlEAbYA971z4vBiyWSJWtHrD4m79PO1oPCrv/9dym65aoIDMc5ZeJQBOUAqAB0/VEnR+yQf5BreQ==
 
 react-whatsapp-widget@^1.3.0:
   version "1.3.0"
