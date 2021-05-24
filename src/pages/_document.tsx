@@ -46,7 +46,7 @@ export default class NextDocument extends Document {
             as="font"
             crossOrigin=""
           ></link>
-
+          <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7458896.js"></script>
           <Analytics />
         </Head>
         <body>
