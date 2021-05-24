@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Document, {
   Html,
   Head,
@@ -8,11 +8,6 @@ import Document, {
 } from 'next/document'
 import Analytics from 'components/Analytics'
 import { ServerStyleSheet } from 'styled-components'
-import Hotjar from 'components/Hotjar'
-
-import useHotjar from 'react-use-hotjar'
-
-const myCustomLogger = console.info
 
 export default class NextDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -27,7 +22,6 @@ export default class NextDocument extends Document {
         })
 
       const initialProps = await Document.getInitialProps(ctx)
-
       return {
         ...initialProps,
         styles: (
@@ -43,12 +37,6 @@ export default class NextDocument extends Document {
   }
 
   render() {
-    const { initHotjar } = useHotjar()
-
-    React.useEffect(() => {
-      initHotjar(2415059, 6, false, myCustomLogger)
-    }, [initHotjar])
-
     return (
       <Html lang="pt-br">
         <Head>
@@ -57,7 +45,7 @@ export default class NextDocument extends Document {
             href="/fonts/poppins-v9-latin-regular.woff2"
             as="font"
             crossOrigin=""
-          />
+          ></link>
 
           <Analytics />
         </Head>
@@ -65,7 +53,6 @@ export default class NextDocument extends Document {
           <Main />
           <NextScript />
           <Analytics />
-          <Hotjar />
         </body>
       </Html>
     )
