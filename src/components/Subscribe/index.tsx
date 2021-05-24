@@ -34,8 +34,8 @@ const Subscribe = () => {
         }
       ],
       context: {
-        pageUri: 'https://ejaead.metodologiaead.com.br',
-        pageName: 'Landing Page Eja EAD'
+        pageUri: 'https://saude.metodologiaead.com.br',
+        pageName: 'Landing Page Saúde'
       }
     }
     console.log(data)
