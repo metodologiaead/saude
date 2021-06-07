@@ -13,20 +13,12 @@ const Farmacia = () => {
               <h3>Farmácia Clínica com Atenção Farmacêutica</h3>
               <img src="/img/estetoscopio.svg" alt="Ícone Estetoscopio" />
             </div>
-            <p>
-              Desta forma, o Lorem Ipsum gerado é sempre livre de repetição, ou
-              de injecção
-            </p>
           </li>
           <li>
             <div>
               <h3>Farmácia Hospitalar</h3>
               <img src="/img/estetoscopio.svg" alt="Ícone Estetoscopio" />
             </div>
-            <p>
-              Desta forma, o Lorem Ipsum gerado é sempre livre de repetição, ou
-              de injecção
-            </p>
           </li>
         </ul>
       </S.ItemsLeftWrapper>

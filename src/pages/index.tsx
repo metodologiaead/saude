@@ -7,6 +7,7 @@ import Qualidades from 'components/Qualidades'
 import Copy from 'components/Copy'
 import React from 'react'
 import CursosMobile from 'components/CursosMobile'
+import Valor from 'components/Valor'
 
 const Index = () => (
   <>
@@ -16,6 +17,7 @@ const Index = () => (
     <Conclusao />
     <Qualidades />
     <Inscricao />
+    <Valor />
     <Footer />
     <Copy />
   </>
