@@ -13,7 +13,7 @@ const Header = () => {
           <img className="logo" src="/img/logo_metodologiaead.png" alt="Logo Metodologia EAD"/>
           <h1>VENHA EVOLUIR NA ÁREA DA SAÚDE, VALORES IMPERDÍVEIS</h1>
           <p>
-            Faça sua Pós-Graduação totalmente ONLINE. <br /> Conclusão de 4 a 6
+            Faça sua Pós-Graduação totalmente ONLINE. <br /> Conclusão de 6 a 18
             meses, TCC opcional.
           </p>
           <S.ButtonsWrapper>
