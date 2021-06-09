@@ -8,7 +8,7 @@ const Conclusao = () => {
     <S.Container>
       <S.Content>
         <S.HeadingWrapper>
-          <h2>Conclusão de 4 a 6 meses</h2>
+          <h2>Conclusão de 6 a 12 meses</h2>
           <p>
             Nossas instituições de ensino possuem reconhecimento e atuação
             nacional com oferta de cursos presenciais e a distância, chancelados
